@@ -29,6 +29,15 @@ The goal of this project was to practice data cleaning, SQL querying, explorator
 - Exploratory data analysis
 - Data visualization
 
+## Project Highlights
+
+- Analyzed the geographic distribution of sauna and cold-plunge venues across U.S. states and cities.
+- Compared the number of venue records containing cold-plunge and traditional sauna services.
+- Investigated drop-in pricing patterns across states.
+- Identified and addressed blank pricing values during data cleaning.
+- Used SQL aggregation and filtering to prepare results for visualization.
+- Created Excel visualizations to communicate analytical findings.
+
 ## Analysis
 
 This project examines:
@@ -72,6 +81,14 @@ This visualization shows average drop-in pricing by state after excluding NULL a
 - Venue counts varied substantially across states and cities.
 - Average drop-in pricing varied across states in the cleaned pricing analysis.
 - Data cleaning was necessary because some pricing records contained blank values rather than SQL NULL values.
+
+## Data Quality & Limitations
+
+- The analysis is based on the available records in the source dataset and may not represent every sauna or cold-plunge venue in the United States.
+- Some pricing records contained NULL or blank values and were excluded from the cleaned pricing analysis.
+- The `dropIn` field may contain inconsistencies in how pricing information was recorded across venues.
+- Pricing results were limited to states with at least five usable price records to reduce the influence of very small sample sizes.
+- Because the dataset is a snapshot of available records, venue counts and pricing may change over time.
 
 ## Data Source
 
